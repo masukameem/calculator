@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="icon" type="image/icon" href="images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calculator | Masuka Meem</title>
+</head>
+
+<body>
+    <a onclick="mode()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <div class="container calculator">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5">
+                <div class="row no-gutters">
+                    <input type="text" name="result" readonly="readonly" class="form-control result" id="result">
+                </div>
+                <div class="row no-gutters">
+                    <button class="btn btn-lg col" onclick="Dlt()">Dlt</button>
+                    <button class="btn btn-lg col" onclick="OpenB()">(</button>
+                    <button class="btn btn-lg col" onclick="CloseB()">)</button>
+                    <button class="btn btn-lg col" onclick="Div()">/</button>
+                </div>
+                <div class="row no-gutters">
+                    <button class="btn btn-lg col" onclick="Seven()">7</button>
+                    <button class="btn btn-lg col" onclick="Eight()">8</button>
+                    <button class="btn btn-lg col" onclick="Nine()">9</button>
+
+                    <button class="btn btn-lg col" onclick="Mul()">x</button>
+                </div>
+                <div class="row no-gutters">
+                    <button class="btn btn-lg col" onclick="Four()">4</button>
+                    <button class="btn btn-lg col" onclick="Five()">5</button>
+                    <button class="btn btn-lg col" onclick="Six()">6</button>
+                    <button class="btn btn-lg col" onclick="Sub()">-</button>
+                </div>
+                <div class="row no-gutters">
+                    <button class="btn btn-lg col" onclick="One()">1</button>
+                    <button class="btn btn-lg col" onclick="Two()">2</button>
+                    <button class="btn btn-lg col" onclick="Three()">3</button>
+                    <button class="btn btn-lg col" onclick="Add()">+</button>
+                </div>
+                <div class="row no-gutters">
+                    <button class="btn btn-lg col" onclick="Clr()">Clr</button>
+                    <button class="btn btn-lg col" onclick="Zero()">0</button>
+                    <button class="btn btn-lg col" onclick="Dot()">.</button>
+                    <button class="btn btn-lg col" onclick="Equ()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var e = document.getElementById('result');
+
+        function One() {
+            e.value += "1";
+        }
+
+        function Two() {
+            e.value += "2";
+        }
+
+        function Three() {
+            e.value += "3";
+        }
+
+        function Four() {
+            e.value += "4";
+        }
+
+        function Five() {
+            e.value += "5";
+        }
+
+        function Six() {
+            e.value += "6";
+        }
+
+        function Seven() {
+            e.value += "7";
+        }
+
+        function Eight() {
+            e.value += "8";
+        }
+
+        function Nine() {
+            e.value += "9";
+        }
+
+        function Zero() {
+            e.value += "0";
+        }
+
+        function Dot() {
+            e.value += ".";
+        }
+
+        function OpenB() {
+            e.value += "(";
+        }
+
+        function CloseB() {
+            e.value += ")";
+        }
+
+        function Add() {
+            e.value += "+";
+        }
+
+        function Sub() {
+            e.value += "-";
+        }
+
+        function Mul() {
+            e.value += "*";
+        }
+
+        function Div() {
+            e.value += "/";
+        }
+
+        function Equ() {
+            e.value = eval(e.value);
+        }
+
+        function Clr() {
+            e.value = "";
+        }
+
+        function Dlt() {
+            var a = e.value;
+            e.value = a.substring(0, a.length - 1);
+        }
+
+        function mode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: cursive;
+}
+
+a {
+    float: right;
+    margin: 15px;
+}
+
+span {
+    display: block;
+    height: 5px;
+    width: 5px;
+    border-radius: 55px;
+    background-color: #85888c;
+    margin-bottom: 3px;
+}
+
+.calculator > .row {
+    height: 100vh;
+}
+
+.form-control {
+    font-size: 2.5em;
+    height: calc(2.5em + 0.75rem + 2px);
+    background-color: transparent !important;
+    color: #85888c !important;
+    border: none;
+    border-radius: 12px;
+    margin: 12px 5px;
+    box-shadow: 3px -4px 15px rgb(128 128 128 / 32%), -1px -2px 4px rgb(128 128 128 / 32%);
+}
+
+.btn {
+    font-size: 1.5em !important;
+    border-radius: 12px !important;
+    margin: 5px;
+    background-color:
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#83c5be+0,006d77+80 */
+        background: rgb(131, 197, 190);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(131, 197, 190, 1) 0%, rgba(0, 109, 119, 1) 80%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(131, 197, 190, 1) 0%, rgba(0, 109, 119, 1) 80%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(131, 197, 190, 1) 0%, rgba(0, 109, 119, 1) 80%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#83c5be', endColorstr='#006d77', GradientType=0);
+    /* IE6-9 */
+    box-shadow: 2px 5px 6px rgb(128 128 128 / 32%);
+    color: #ffffff !important;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: 2px 5px 6px rgb(128 128 128 / 32%);
+    height: 52px;
+}
+
+.dark-mode {
+    background-color: #000000;
+}
